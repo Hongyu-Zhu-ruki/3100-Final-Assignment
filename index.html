@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>The website</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://cdn.plot.ly/plotly-latest.min.js"></script>
+  
+  <script src="js/chart1.js"></script>
+
+</head>
+
+<body>
+  <section class="header">
+    <nav>
+      <a href="index.html"></a>
+      <div class="nav-links">
+        <div id="menu" class="menu">MENU</div>
+        <script src="js/menu.js"></script>
+        <ul>
+          <li><a href="">HOME</a></li>
+          <li><a href="">FOREST</a></li>
+          <li><a href="">ENVIRONMENT</a></li>
+          <li><a href="">EMISSION</a></li>
+          <li><a href="">FUTURE</a></li>
+        </ul>
+      </div>
+    </nav>
+
+    <div class="homepage-text">
+      <h1>Australia's 2019 BushFire</h1>
+      <p>In 2019, the largest Australian forest fire in history sounded the alarm. <br>The fire that lasted for nearly half a year not only engulfed the lives of tens of thousands of local animals but also caused almost irreversible effects.
+</p>
+      <button class="explore" href="forest">EXPLORE</button>
+    </div>
+
+    
+  </section>
+  <!-------data-Foreset------->
+  <section class="forest">
+    <h2>Why is Forest IMPORTANT?</h2>
+    <p class="forest-text">Why is it so important for us to protect them?</p>
+    <div class="forest-charts">
+    <div class="reason">
+      <h3>forestry Products</h3>
+      <p class="forest-text">They can generate economic value.</p>
+    </div>
+      <div class="reason">
+      <h3>CO2 Emission</h3>
+      <p class="forest-text">They can fix carbon dioxide. 
+</p>
+    </div>
+    <div class="reason">
+      <h3>Carbon Cycle</h3>
+      <p class="forest-text">They can fix carbon dioxide. 
+</p>
+    </div>
+    </div>
+   <p class="forest-text">Forests are important economic and environmental assets. Therefore, forests are the main force for absorbing carbon dioxide and play a vital role in the sustainable development of energy.
+</p>
+  </section>
+  <!-------data-Enrionment------->
+  <section class="environment">
+    <h2>How much damage did bushfire cause to Australian envrionment?</h2>
+    <p class="envrionment-text">The forests in each area were severely damaged, the vegetation area in Australia was greatly weakened, many creatures died in the wildfires, the weather became worse, and the former holiday paradise became a barren ruin.
+</p>
+    <div id="myPlot"></div>
+    <script src="js/script.js"></script>
+    <div class="forest-charts">
+    <div class="e-reason">
+      <h3>Nearly 82% of total forest area was destroyed in fires</h3>
+      <p class="forest-text">The fires have devoured tens of thousands of forest areas, turning millennia-old forests into coke.</p>
+      <div id="Totalplot"></div>
+      <script src="js/total.js"></script>
+    </div>
+    <div class="e-reason">
+      <h3>Huge Blow to the envrionment</h3>
+      <p class="forest-text">Compared with the trees in previous years, this fire has greatly reduced the forest cover, and some forests can even be said to be completely burned. 
+</p>
+      <div id="Perplot"></div>
+      <script src="js/percentage.js"></script>
+    </div>
+    </div>
+    
+    <p>Vegetation was severely damaged</p>
+    
+    
+  </section>
+  <!-------data-CO2-Emission------->
+  <section class="emission">
+    <h2>How much carbon dioxide emissions did Australia's bushfires produce?</h2>
+    <p class= "emission-text">Ahead of the 2019-2020 Australian bushfire season, Australia's forests are thought to reabsorb all the carbon released by bushfires across the country. which means that forests achieve net-zero emissions. </p>
+    <div id="emiplot"></div>
+    <script src="js/emiplot.js"></script>
+    <div class="forest-charts">
+    <div class="em-reason">
+      <h3>Nearly 82% of total forest area was destroyed in fires</h3>
+      <p class="forest-text">The fires have devoured tens of thousands of forest areas, turning millennia-old forests into coke.</p>
+    </div>
+    <div class="em-reason">
+      <h3>Huge Blow to the envrionment</h3>
+      <p class="forest-text">Compared with the trees in previous years, this fire has greatly reduced the forest cover, and some forests can even be said to be completely burned. 
+</p>
+    </div>
+    </div>
+  </section>
+  
+  <!-------data-future------->
+  <section class= "future">
+  <h2>How to prevent bushfire like this</h2>
+    <p class="future-text">In order to prevent such a tragedy from happening again, we must take every forest fire in Australia seriously, observe it carefully, prevent the spread of the flame in advance, and control it to a human-controlled level.</p>
+    <div class="forest-charts">
+    <div class="f-reason">
+      <h3>Prevention</h3>
+      <p class="forest-text">Do a good job in fire-related prevention to prevent disasters from coming again.</p>
+    </div>
+    <div class="f-reason">
+      <h3>Process</h3>
+      <p class="forest-text">Compared with the trees in previous years, this fire has greatly reduced the forest cover, and some forests can even be said to be completely burned. 
+</p>
+    </div>
+    </div>
+    <div class="forest-charts">
+    <div class="f-reason">
+      <h3>Huge Blow to the envrionment</h3>
+      <p class="forest-text">Compared with the trees in previous years, this fire has greatly reduced the forest cover, and some forests can even be said to be completely burned. 
+</p>
+    </div>
+    <div class="f-reason">
+      <h3>Huge Blow to the envrionment</h3>
+      <p class="forest-text">Compared with the trees in previous years, this fire has greatly reduced the forest cover, and some forests can even be said to be completely burned. 
+</p>
+    </div>
+    </div>
+  </section>
+  
+</body>
+
+</html>
