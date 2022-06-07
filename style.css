@@ -68,21 +68,20 @@ nav{
 .homepage-text p{
   margin: 10px 0 40px;
 }
-button{
+.button{
   margin: auto;
   text-align: center;
   text-decoration: none;
   background-color: #f78b87;
   color: white;
-  width: 200px;
-  height: 50px;
+  padding: 10px;
   border: 0;
   font-size: 20px;
-  box-sizing: content-box;
-  border-radius: 5px;
+  box-sizing: content-box;;
+  border-radius: 3px;
   transition: all 0.3s ease;
 }
-button:hover{
+.button:hover{
   background-color: #985e5d;
 }
 @media(max-width: 700px){
@@ -135,13 +134,17 @@ h2{
   justify-content: space-between; 
 }
 .reason{
-  margin-bottom: 10%;
+  margin-bottom: 5%;
   text-align: center;
   flex-basis: 30%;
-  background: #d2edce;
+  background: #e7f5e5;
   border-radius: 10px; 
   padding: 10px;
   box-sizing: border-box;
+  overflow: hidden;
+}
+.reason img{
+  width: 100%;
 }
 h3{
   text-align: center;
@@ -152,9 +155,30 @@ h3{
   box-shadow: 0 0 20px  #9db899;
   transition: 0.3s;
 }
+.future-text{
+  color: white;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px; 
+  padding: 0;
+  margin-top: 5px;
+}
 @media(max-width: 700px){
   .forest-charts{
     flex-direction: column;
+  }
+  h2{
+  font-size: 25px;
+  font-weight: 400px;
+}
+  .forest-text{
+    font-size: 15px;
+  }
+  .future-text{
+    font-size: 15px;
+  }
+  .sum-text{
+    font-size: 15px;
   }
 }
 /*------ environment -----*/
@@ -166,6 +190,7 @@ h3{
 }
 h2{
   text-align: left;
+  margin-bottom: 3%;
 }
 .e-reason{
   margin-bottom: 10%;
@@ -197,7 +222,7 @@ h2{
 }
 .em-reason{
   margin-bottom: 10%;
-  text-align: center;
+  text-align: auto-flow;
   flex-basis: 46%;
   background: white;
   border-radius: 0px; 
@@ -215,19 +240,34 @@ h3{
 }
 /*------ future -----*/
 .future{
+  min-height: 100vh;
+  width: 100%;
+  background-image: linear-gradient(rgba(4,9,30,0.7),rgba(4,9,30,0.7)),url(images/homepage.jpg);
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  color: white;
+  margin-bottom: 5%;
+}
+.future-context{
   width: 80%;
   margin: auto;
   text-align: center;
   padding-top: 50px;
+  margin-bottom: 5%;
 }
 .f-reason{
-  margin-bottom: 10%;
   text-align: center;
   flex-basis: 46%;
-  background: white;
+  background: rgba(106, 96, 171,0.7);
   border-radius: 0px; 
   padding: 10px;
   box-sizing: border-box;
+  overflow: hidden;
+  color: white;
+}
+.f-reason img{
+  width: 100%;
 }
 h3{
   text-align: center;
@@ -237,4 +277,27 @@ h3{
 .f-reason:hover{
   box-shadow: 0 0 20px  #8e71f9;
   transition: 0.3s;
+}
+/*------ reference -----*/
+.sum{
+  width: 80%;
+  margin: auto;
+  text-align: center;
+  padding-top: 50px;
+  margin-bottom: 3%;
+}
+.sum-text{
+  color: #133a22;
+  font-size: 20px;
+  font-weight: 300;
+  line-height: 30px; 
+  padding: 0;
+  margin-top: 5px;
+}
+/*------ reference -----*/
+.reference{
+  width: 80%;
+  margin: auto;
+  text-align: left;
+  padding-top: 50px;
 }
